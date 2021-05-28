@@ -97,7 +97,7 @@ namespace WindowsFormsAppPrincipal
             this.iconButtonMath.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconButtonMath.IconColor = System.Drawing.Color.Black;
             this.iconButtonMath.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonMath.Location = new System.Drawing.Point(0, 135);
+            this.iconButtonMath.Location = new System.Drawing.Point(0, 141);
             this.iconButtonMath.Name = "iconButtonMath";
             this.iconButtonMath.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.iconButtonMath.Size = new System.Drawing.Size(160, 45);
@@ -115,7 +115,7 @@ namespace WindowsFormsAppPrincipal
             this.iconButtonConversor.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconButtonConversor.IconColor = System.Drawing.Color.Black;
             this.iconButtonConversor.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonConversor.Location = new System.Drawing.Point(0, 90);
+            this.iconButtonConversor.Location = new System.Drawing.Point(0, 96);
             this.iconButtonConversor.Name = "iconButtonConversor";
             this.iconButtonConversor.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.iconButtonConversor.Size = new System.Drawing.Size(160, 45);
@@ -133,7 +133,7 @@ namespace WindowsFormsAppPrincipal
             this.iconButtonPiramide.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconButtonPiramide.IconColor = System.Drawing.Color.Black;
             this.iconButtonPiramide.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonPiramide.Location = new System.Drawing.Point(0, 45);
+            this.iconButtonPiramide.Location = new System.Drawing.Point(0, 51);
             this.iconButtonPiramide.Name = "iconButtonPiramide";
             this.iconButtonPiramide.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.iconButtonPiramide.Size = new System.Drawing.Size(160, 45);
@@ -155,11 +155,12 @@ namespace WindowsFormsAppPrincipal
             this.iconButtonCifras.Location = new System.Drawing.Point(0, 0);
             this.iconButtonCifras.Name = "iconButtonCifras";
             this.iconButtonCifras.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.iconButtonCifras.Size = new System.Drawing.Size(160, 45);
+            this.iconButtonCifras.Size = new System.Drawing.Size(160, 51);
             this.iconButtonCifras.TabIndex = 6;
             this.iconButtonCifras.Text = "Cantidad de Cifras";
             this.iconButtonCifras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonCifras.UseVisualStyleBackColor = true;
+            this.iconButtonCifras.Click += new System.EventHandler(this.iconButtonCifras_Click);
             // 
             // iconButtonLeft
             // 

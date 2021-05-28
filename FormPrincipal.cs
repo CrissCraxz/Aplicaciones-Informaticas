@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsAppPrincipal
 {
     public partial class FormPrincipal : Form
@@ -54,12 +55,13 @@ namespace WindowsFormsAppPrincipal
             showSubmenu(panelSubmenuRight);
         }
 
-        //abrir un formulario en un panel o contendor
+    
 
-        private Form currentForm = null;
+     
+        /*
         private void openChildForm(Form childForm)
         {
-            if (currentForm != null)
+            if (currentForm !=  null)
             {
                 currentForm.Close();
                 currentForm = childForm;
@@ -73,7 +75,50 @@ namespace WindowsFormsAppPrincipal
                 childForm.Show();
 
             }
+        }*/
+
+        private void iconButtonCifras_Click(object sender, EventArgs e)
+        {
+            AbrirForm<WindowsFormsAppCifras.FormCifras>();
+            hideSubmenu();
+
         }
+
+
+        //abrir un formulario en un panel o contendor
+        private void AbrirForm<Miform>() where Miform : Form, new()
+        {
+            Form formulario;
+            formulario = panelContenedor.Controls.OfType<Miform>().FirstOrDefault();//Busca en la coleccin un formulario
+            //Si el form no existe
+            if (formulario == null)
+            {
+                formulario = new Miform();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                panelContenedor.Controls.Add(formulario);
+                panelContenedor.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            else
+            {
+                formulario.BringToFront();
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
